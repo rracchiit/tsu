@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rachit Sharma | DevOps Portfolio</title>
+
+  <style>
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: "Poppins", "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #111827, #0d1117);
+      color: white;
+      overflow-x: hidden;
+    }
+
+    /* Floating background glow */
+    .orb {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(140px);
+      opacity: 0.35;
+      z-index: -1;
+      animation: float 8s ease-in-out infinite alternate;
+    }
+
+    .orb.one {
+      width: 500px;
+      height: 500px;
+      background: #58a6ff;
+      top: -200px;
+      left: -200px;
+    }
+
+    .orb.two {
+      width: 450px;
+      height: 450px;
+      background: #22c55e;
+      bottom: -200px;
+      right: -150px;
+    }
+
+    @keyframes float {
+      from { transform: translateY(0px); }
+      to { transform: translateY(120px); }
+    }
+
+    /* HERO */
+    header {
+      text-align: center;
+      padding: 90px 20px 60px;
+    }
+
+ header h1 {
+  font-size: 3.6rem;
+  margin: 0;
+  background: linear-gradient(to right, #58a6ff, #22c55e);
+
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+    
+
+    header p {
+      max-width: 750px;
+      margin: 18px auto;
+      font-size: 1.2rem;
+      color: #bbb;
+    }
+
+    /* Hero GIF */
+    .hero-gif {
+      width: 180px;
+      margin-top: 25px;
+      border-radius: 18px;
+      box-shadow: 0 0 25px rgba(88,166,255,0.35);
+    }
+
+    /* Buttons */
+    .links {
+      margin-top: 30px;
+    }
+
+    .links a {
+      text-decoration: none;
+      margin: 10px;
+      padding: 12px 22px;
+      border-radius: 14px;
+      font-weight: bold;
+      display: inline-block;
+      transition: 0.25s;
+      border: 1px solid rgba(255,255,255,0.15);
+      backdrop-filter: blur(10px);
+      background: rgba(255,255,255,0.05);
+      color: white;
+    }
+
+    .links a:hover {
+      transform: scale(1.08);
+      background: rgba(88,166,255,0.25);
+      border-color: #58a6ff;
+    }
+
+    /* SECTIONS */
+    section {
+      max-width: 1050px;
+      margin: auto;
+      padding: 70px 20px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #58a6ff;
+    }
+
+    /* GRID */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 25px;
+    }
+
+    /* GLASS CARDS */
+    .card {
+      padding: 25px;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.12);
+      backdrop-filter: blur(14px);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 25px rgba(88,166,255,0.25);
+      border-color: rgba(88,166,255,0.4);
+    }
+
+    /* SKILL BARS */
+    .skill {
+      margin: 14px 0;
+    }
+
+    .skill span {
+      display: block;
+      font-size: 1rem;
+      margin-bottom: 6px;
+      color: #ddd;
+    }
+
+    .bar {
+      width: 100%;
+      height: 10px;
+      border-radius: 10px;
+      background: rgba(255,255,255,0.1);
+      overflow: hidden;
+    }
+
+    .fill {
+      height: 100%;
+      border-radius: 10px;
+      background: linear-gradient(to right, #58a6ff, #22c55e);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: rgba(255,255,255,0.03);
+      color: #777;
+      font-size: 0.9rem;
+    }
+
+    a { color: #58a6ff; }
+  </style>
+</head>
+
+<body>
+
+  <!-- BACKGROUND ORBS -->
+  <div class="orb one"></div>
+  <div class="orb two"></div>
+
+  <!-- HERO -->
+  <header>
+    <h1>Rachit Sharma</h1>
+    <p>
+      DevOps & Cloud Engineer in Progress 🚀  
+      Building strong foundations in Linux, Docker, CI/CD, and scalable systems.
+    </p>
+
+    <!-- Cool Dev GIF -->
+    <img class="hero-gif"
+      src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif"
+      alt="Coding">
+
+    <div class="links">
+      <a href="mailto:rachitsharma1612@gmail.com">Email</a>
+      <a href="https://github.com/rracchiit" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/rachit-sharma-b8a799375"
+         target="_blank">LinkedIn</a>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section>
+    <h2>About Me</h2>
+    <div class="card">
+      <p>
+        Hi, I’m <b>Rachit Sharma</b>, a Computer Science Engineering student passionate about
+        <b>DevOps, Cloud Computing</b>, and building modern infrastructure systems.
+      </p>
+      <p>
+        I’m currently learning tools like Docker, Linux, and GitHub Actions while strengthening
+        my programming foundations in Python and C.
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section>
+    <h2>Skills</h2>
+
+    <div class="card">
+      <div class="skill">
+        <span>Python</span>
+        <div class="bar"><div class="fill" style="width:90%"></div></div>
+      </div>
+
+      <div class="skill">
+        <span>C Programming</span>
+        <div class="bar"><div class="fill" style="width:75%"></div></div>
+      </div>
+
+      <div class="skill">
+        <span>Git & GitHub</span>
+        <div class="bar"><div class="fill" style="width:80%"></div></div>
+      </div>
+
+      <div class="skill">
+        <span>Linux (Learning)</span>
+        <div class="bar"><div class="fill" style="width:65%"></div></div>
+      </div>
+
+      <div class="skill">
+        <span>Docker (Learning)</span>
+        <div class="bar"><div class="fill" style="width:55%"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEVOPS ROADMAP -->
+  <section>
+    <h2>DevOps Journey 🚀</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>✔ Current Focus</h3>
+        <p>Linux + GitHub Actions + Docker fundamentals</p>
+      </div>
+
+      <div class="card">
+        <h3>☁️ Next Step</h3>
+        <p>AWS Cloud + Deploying real projects</p>
+      </div>
+
+      <div class="card">
+        <h3>🔥 Goal</h3>
+        <p>Become a skilled Cloud & DevOps Engineer</p>
+      </div>
+    </div>
+
+    <!-- Extra Cool GIF -->
+    <center>
+      <img class="hero-gif"
+        src="https://media.giphy.com/media/LMt9638dO8dftAjtco/giphy.gif"
+        alt="DevOps Gif">
+    </center>
+  </section>
+
+  <!-- CONTACT -->
+  <section>
+    <h2>Contact</h2>
+    <div class="card">
+      <p><b>Email:</b> rachitsharma1612@gmail.com</p>
+      <p><b>GitHub:</b> <a href="https://github.com/rracchiit">rracchiit</a></p>
+      <p><b>LinkedIn:</b>
+        <a href="https://www.linkedin.com/in/rachit-sharma-b8a799375">
+          Profile Link
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Rachit Sharma • Portfolio hosted on GitHub Pages
+  </footer>
+
+</body>
+</html>
